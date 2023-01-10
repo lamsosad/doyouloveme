@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOYOULOVEME</title>
+</head>
+<body style="text-align: center; background-color: antiquewhite; color: coral">
+<h1>DO YOU LOVE ME?</h1>
+<input style="background-color: bisque; color: black; position: absolute; left: 40%; top: 100px" type="button"
+       value="Yes" onclick="oK()">
+<input style="background-color: bisque; color: black; position: absolute; left: 60%; top: 100px" id="nO" type="button"
+       value="No" onmouseover="noLove()">
+</body>
+<script>
+  function oK() {
+    document.write("I LOVE YOU TOO!!!");
+  }
+
+  function noLove() {
+    let a = Math.round(Math.random() * window.innerWidth);
+    let b = Math.round(Math.random() * window.innerHeight);
+    document.getElementById("nO").style.left = a + 'px';
+    document.getElementById("nO").style.left = b + 'px';
+  }
+</script>
+</html>
